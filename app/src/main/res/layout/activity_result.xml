@@ -101,9 +101,13 @@
             android:orientation="vertical">
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/card_reloj_1"
                 android:layout_width="match_parent"
                 android:layout_height="160dp"
                 android:layout_margin="10dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
                 app:cardBackgroundColor="@color/white"
                 app:cardCornerRadius="5dp"
                 app:cardElevation="5dp">
@@ -139,9 +143,13 @@
                     android:text="@string/relojPrecio_1"/>
             </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
+                android:id="@+id/card_reloj_2"
                 android:layout_width="match_parent"
                 android:layout_height="160dp"
                 android:layout_margin="10dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
                 app:cardBackgroundColor="@color/white"
                 app:cardCornerRadius="5dp"
                 app:cardElevation="5dp">
@@ -177,9 +185,13 @@
                     android:text="@string/relojPrecio_2"/>
             </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
+                android:id="@+id/card_reloj_3"
                 android:layout_width="match_parent"
                 android:layout_height="160dp"
                 android:layout_margin="10dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
                 app:cardBackgroundColor="@color/white"
                 app:cardCornerRadius="5dp"
                 app:cardElevation="5dp">
@@ -215,9 +227,13 @@
                     android:text="@string/relojPrecio_3"/>
             </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
+                android:id="@+id/card_reloj_4"
                 android:layout_width="match_parent"
                 android:layout_height="160dp"
                 android:layout_margin="10dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
                 app:cardBackgroundColor="@color/white"
                 app:cardCornerRadius="5dp"
                 app:cardElevation="5dp">
@@ -253,9 +269,13 @@
                     android:text="@string/relojPrecio_4"/>
             </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
+                android:id="@+id/card_reloj_5"
                 android:layout_width="match_parent"
                 android:layout_height="160dp"
                 android:layout_margin="10dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
                 app:cardBackgroundColor="@color/white"
                 app:cardCornerRadius="5dp"
                 app:cardElevation="5dp">
@@ -291,9 +311,13 @@
                     android:text="@string/relojPrecio_5"/>
             </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
+                android:id="@+id/card_reloj_6"
                 android:layout_width="match_parent"
                 android:layout_height="160dp"
                 android:layout_margin="10dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
                 app:cardBackgroundColor="@color/white"
                 app:cardCornerRadius="5dp"
                 app:cardElevation="5dp">
