@@ -20,7 +20,6 @@ public class ResultActivity extends AppCompatActivity {
         String usuario = getIntent().getStringExtra("Extra_User");
         textoInicio.setText(usuario);
 
-
         CardView cardReloj1 = findViewById(R.id.card_reloj_1);
         CardView cardReloj2 = findViewById(R.id.card_reloj_2);
         CardView cardReloj3 = findViewById(R.id.card_reloj_3);

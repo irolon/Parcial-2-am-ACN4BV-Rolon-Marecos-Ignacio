@@ -20,7 +20,6 @@ public class CardProduct extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_card_product);
 
-
         // Info para card del producto
         ImageView imageView = findViewById(R.id.imageView7);
         TextView RelMarca = findViewById(R.id.marca);
@@ -42,9 +41,7 @@ public class CardProduct extends AppCompatActivity {
         }
 
         // Boton Volver
-
         Button btnVolver = findViewById(R.id.BtnVolver);
-
         btnVolver.setOnClickListener(v -> {
             finish();
         });

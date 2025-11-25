@@ -124,7 +124,7 @@
                 android:layout_width="206dp"
                 android:layout_height="47dp"
                 android:layout_marginBottom="32dp"
-                android:backgroundTint="#35894B"
+                android:backgroundTint="@color/comprar"
 
                 android:text="COMPRAR"
                 app:layout_constraintBottom_toBottomOf="parent"

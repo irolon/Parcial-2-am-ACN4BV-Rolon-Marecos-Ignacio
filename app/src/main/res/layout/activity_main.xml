@@ -56,7 +56,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"
-                android:textColorHint="#ffffff"
+                android:textColorHint="@color/white"
                 android:textSize="20sp" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -80,7 +80,7 @@
                 android:imeOptions="actionDone"
                 android:inputType="textPassword"
                 android:textColor="@color/white"
-                android:textColorHint="#ffffff"
+                android:textColorHint="@color/white"
                 android:textSize="20sp" />
 
         </com.google.android.material.textfield.TextInputLayout>
