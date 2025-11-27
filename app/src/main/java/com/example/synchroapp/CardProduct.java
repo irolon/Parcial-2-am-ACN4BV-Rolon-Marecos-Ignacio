@@ -18,6 +18,8 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class CardProduct extends AppCompatActivity {
 
+    private TextView cartBadge;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,6 +56,7 @@ public class CardProduct extends AppCompatActivity {
         Button btnComprar = findViewById(R.id.comprar);
 
         btnComprar.setOnClickListener(v -> {
+            CartManager.addItem();
             LayoutInflater inflater = getLayoutInflater();
             View layout = inflater.inflate(R.layout.toast_custom,
                     findViewById(R.id.toast_root));
@@ -64,9 +67,23 @@ public class CardProduct extends AppCompatActivity {
             Toast toast = new Toast(getApplicationContext());
             toast.setDuration(Toast.LENGTH_SHORT);
             toast.setView(layout);
-            toast.setGravity(Gravity.TOP | Gravity.CENTER_HORIZONTAL, 0, 150); // arriba centrado
+            toast.setGravity(Gravity.TOP | Gravity.CENTER_HORIZONTAL, 0, 150);
             toast.show();
             v.postDelayed(this::finish, 500);
         });
+        cartBadge = findViewById(R.id.cart_badge);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        int count = CartManager.getCount();
+        if (count > 0) {
+            cartBadge.setVisibility(View.VISIBLE);
+            cartBadge.setText(String.valueOf(count));
+        } else {
+            cartBadge.setVisibility(View.GONE);
+        }
     }
 }

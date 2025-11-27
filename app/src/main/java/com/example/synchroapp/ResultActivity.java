@@ -2,6 +2,7 @@ package com.example.synchroapp;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -9,6 +10,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
 public class ResultActivity extends AppCompatActivity {
+
+    private TextView cartBadge;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -78,7 +81,7 @@ public class ResultActivity extends AppCompatActivity {
                 R.drawable.img_reloj_6
         ));
 
-
+        cartBadge = findViewById(R.id.cart_badge);
     }
     private void abrirDetalle(String marca, String detalle, String precio, int imagenResId) {
         Intent intent = new Intent(this, CardProduct.class);
@@ -87,6 +90,19 @@ public class ResultActivity extends AppCompatActivity {
         intent.putExtra("precio", precio);
         intent.putExtra("imagen", imagenResId);
         startActivity(intent);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        int count = CartManager.getCount();
+        if (count > 0) {
+            cartBadge.setVisibility(View.VISIBLE);
+            cartBadge.setText(String.valueOf(count));
+        } else {
+            cartBadge.setVisibility(View.GONE);
+        }
     }
 
 
