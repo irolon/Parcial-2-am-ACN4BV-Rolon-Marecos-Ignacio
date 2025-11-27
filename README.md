@@ -54,11 +54,13 @@ Parcial-2-am-ACN4BV-Rolon-Marecos-Ignacio/
 │   │   │   │   ├── MainActivity.java      // Pantalla de inicio de sesión
 │   │   │   │   ├── ResultActivity.java    // Muestra el catálogo de productos
 │   │   │   │   └── CardProduct.java       // Presenta el detalle de un producto
+│   │   │   │   └── CardManager.java       // Logica del carrito   
 │   │   │   └── res/
 │   │   │       ├── layout/
 │   │   │       │   ├── activity_main.xml      // Diseño de la pantalla de login
 │   │   │       │   ├── activity_result.xml    // Diseño del catálogo
 │   │   │       │   └── activity_card_product.xml // Diseño de la vista de detalle
+│   │   │       │   └── toast_custom.xml       //  Diseño toast
 │   │   │       ├── drawable/               // Imágenes y fondos
 │   │   │       └── values/                 // strings.xml, colors.xml, themes
 │   │   └── AndroidManifest.xml
