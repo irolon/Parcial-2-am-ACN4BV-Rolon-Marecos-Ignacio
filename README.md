@@ -1,13 +1,20 @@
-# Synchro App – E‑commerce de relojes inteligentes
+# Synchro App – E‑Commerce de relojes inteligentes
 
-
-**Synchro App** es un proyecto de ejemplo para la materia de Aplicaciones Móviles.  La aplicación simula un pequeño comercio electrónico de relojes inteligentes desarrollado en Android con Java y los componentes de Material Design.  No existe un servidor ni autenticación real: los datos de productos están definidos en el propio código y el inicio de sesión sólo valida que los campos no estén vacíos.
+La aplicación simula un pequeño comercio electrónico de relojes inteligentes desarrollado en Android con Java y los componentes de Material Design.
 
 ## 📱 Descripción general
 
-1. **Pantalla de inicio de sesión:** se solicita un usuario y una contraseña.  Cuando ambos campos contienen algún valor, se habilita el acceso a la tienda.  También incorpora un checkbox “Recordar” y un texto “Olvidar contraseña” a modo ilustrativo.
-2. **Listado de productos:** tras iniciar sesión aparece un catálogo de seis smartwatches.  Cada elemento se presenta en una tarjeta con la imagen del producto, su nombre y el precio.  La pantalla es scrollable para ver todos los productos disponibles.
-3. **Detalle del producto:** al pulsar sobre cualquier tarjeta se navega a una vista detallada que muestra la foto ampliada, el nombre, una descripción breve y el precio.  Esta pantalla ofrece un botón verde **COMPRAR** (sin funcionalidad de compra en esta versión) y un botón **Volver** para regresar al listado.
+* **Pantalla de inicio de sesión:** se solicita un usuario y una contraseña. Cuando ambos campos contienen algún valor, se habilita el acceso a la tienda. También incorpora un checkbox “Recordar” y un texto “Olvidar contraseña” a modo ilustrativo.
+* **Listado de productos:** tras iniciar sesión aparece un catálogo de seis smartwatches. Cada elemento se presenta en una tarjeta con la imagen del producto, su nombre y el precio. La pantalla es scrollable para ver todos los productos disponibles.
+* **Detalle del producto:** al pulsar sobre cualquier tarjeta se navega a una vista detallada que muestra la foto ampliada, el nombre, una descripción breve y el precio. Esta pantalla ofrece un botón verde **COMPRAR** que simula la acción de compra: muestra un mensaje de éxito (Toast) y actualiza el contador de ítems en el ícono del carrito.
+
+## 🧭 Navegación y flujo de la aplicación
+
+1.  **Inicio de sesión:** Introduce cual quier texto en los campos Usuario y Contraseña y pulsa Iniciar Sesión.
+2.  **Catálogo:** Aparecerá un encabezado con el mensaje «Bienvenido». Puedes desplazarte verticalmente para ver todas las opciones.
+3.  **Detalle y Compra:** Toca una tarjeta para ver su descripción.
+    * Al presionar **COMPRAR**, aparecerá un *Toast* verde indicando "Producto agregado" y el ícono del carrito mostrará un **badge rojo con la cantidad** de productos acumulados.
+    * Puedes usar el botón **Volver** para regresar al catálogo y seleccionar otro reloj.
 
 
 ## 🛠️ Tecnologías y librerías utilizadas
